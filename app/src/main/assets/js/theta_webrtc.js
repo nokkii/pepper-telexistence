@@ -36,7 +36,7 @@ function initPreview() {
     /*
      * Disable shoot button and setting button
      */
-    disableShootButton();
+    ////disableShootButton();
 
     /*
      * Make WebSocket URL
@@ -83,7 +83,7 @@ function initPreview() {
         console.log('WebSocket connect error');
     }
 
-    changeViewSize();
+    ////changeViewSize();
 }
 
 //
@@ -196,7 +196,7 @@ function prepareNewConnection() {
             /*
              * Enable shoot button and setting button
              */
-            enableShootButton();
+            ////enableShootButton();
         }
     };
 
@@ -253,14 +253,15 @@ function startPreview(previewSize) {
          */
         let json = JSON.parse(responseText);
         let cameraParams = json.results.options;
-        setUIOptions(cameraParams, true);
+        ////setUIOptions(cameraParams, true);
     });
 
     /*
      * Play video
      */
     if (peerConnection != null) {
-        playVideoInternal(remoteVideo, peerConnection.getRemoteStreams()[0]);
+        //playVideoInternal(remoteVideo, peerConnection.getRemoteStreams()[0]);
+        attachVideo("a", peerConnection.getRemoteStreams()[0]);
     }
 }
 
