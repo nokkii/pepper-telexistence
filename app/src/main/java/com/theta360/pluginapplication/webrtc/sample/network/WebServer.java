@@ -63,6 +63,9 @@ public class WebServer {
     private static final String COMMANDS_SCRIPT = "js/theta_webrtc_cmd.js";
     private static final String WEB_UI_CTRL_SCRIPT = "js/theta_webrtc_ui.js";
     private static final String THETA_WEBRTC_SAMPLE_SCRIPT = "js/theta_webrtc.js";
+    private static final String QI_MESSAGING_SCRIPT = "js/qimessaging-1.0.js";
+    private static final String PEPPER_CTRL_SCRIPT = "js/pepper-ctrl.js";
+    private static final String AFRAME_SCRIPT = "js/aframe-master0.9.1.min.js";
     // Icon Resoueces
     private static final String ACTION_CHECK = "img/action_check.png";
     private static final String BTN_CAMERA_SETTING = "img/btn-camerasetting.png";
@@ -185,6 +188,9 @@ public class WebServer {
         mAsyncHttpServer.directory(mContext, "/" + COMMANDS_SCRIPT, COMMANDS_SCRIPT);
         mAsyncHttpServer.directory(mContext, "/" + WEB_UI_CTRL_SCRIPT, WEB_UI_CTRL_SCRIPT);
         mAsyncHttpServer.directory(mContext, "/" + THETA_WEBRTC_SAMPLE_SCRIPT, THETA_WEBRTC_SAMPLE_SCRIPT);
+        mAsyncHttpServer.directory(mContext, "/" + PEPPER_CTRL_SCRIPT, PEPPER_CTRL_SCRIPT);
+        mAsyncHttpServer.directory(mContext, "/" + AFRAME_SCRIPT, AFRAME_SCRIPT);
+        mAsyncHttpServer.directory(mContext, "/" + QI_MESSAGING_SCRIPT, QI_MESSAGING_SCRIPT);
         mAsyncHttpServer.directory(mContext, "/" + ACTION_CHECK, ACTION_CHECK);
         mAsyncHttpServer.directory(mContext, "/" + BTN_CAMERA_SETTING, BTN_CAMERA_SETTING);
         mAsyncHttpServer.directory(mContext, "/" + BTN_MODE_AUTO, BTN_MODE_AUTO);
